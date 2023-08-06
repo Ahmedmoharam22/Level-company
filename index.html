@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Level</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Outfit:wght@300;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,300;1,500;1,700&family=Tajawal:wght@200;300;400;500;800;900&family=Varela+Round&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-md navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="site logo">
+        <h1 class="logo-text">Level</h1>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="level-nav-link nav-link active" aria-current="page" href="#home">HOME</a>
+          <a class="level-nav-link nav-link" href="#services">SERVICES</a>
+          <a class="level-nav-link nav-link" href="#recommends">RECOMMENDS</a>
+          <a class="level-nav-link nav-link" href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- main hero -->
+  <div id="home" class="hero">
+    <div class="container">
+      <form action="index.html" method="get" class="search-form">
+        <div class="form-group" style="flex: 100%;"><i class="fa-solid fa-location-dot"></i>
+          <input type="text" class="form-control" placeholder="Type your destination..">
+        </div>
+        <div class="form-group"><i class="fa-solid fa-calendar-days"></i>
+          <input type="text" class="form-control" placeholder="Check in">
+        </div>
+        <div class="form-group"><i class="fa-solid fa-calendar-days"></i>
+          <input type="text" class="form-control" placeholder="Check out">
+        </div>
+        <div class="form-group"><i class="fa-solid fa-user"></i>
+          <select class="form-control">
+            <option value="rooms">Adults</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="form-group"><i class="fa-solid fa-child"></i>
+          <select class="form-control">
+            <option value="rooms">Childrens</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="form-group"><i class="fa-solid fa-bed"></i>
+          <select class="form-control">
+            <option value="rooms">Romms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Check</button>
+        </div>
+      </form>
+      <p class="need-help">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae, labore!
+        <a href="#">Need Help</a>
+      </p>
+    </div>
+  </div>
+  <!-- subscribe -->
+  <section class="section-color">
+    <div class="container text-center">
+      <h2 class="section-tittle">We are here to help you?</h2>
+      <p class="section-sub-tittle">Subscribe to our news</p>
+      <a href="#" class="btn btn-white">Subscribe Newsletter</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <div class="container">
+      <div class="row">
+
+        <article class="article col-lg-4">
+          <i class="fa-solid fa-hotel article-icon"></i>
+          <h3 class="article-tittle">Hotel & Resturant</h3>
+          <p class="text-black-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, eos.</p>
+          <a href="" class="btn btn-primary">Continue Reading</a>
+        </article>
+
+        <article class="article col-lg-4">
+          <i class="fa-solid fa-plane article-icon"></i>
+          <h3 class="article-tittle">Fatest Travel</h3>
+          <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.</p>
+          <a href="" class="btn btn-primary">Continue Reading</a>
+        </article>
+
+        <article class="article col-lg-4">
+          <i class="fa-solid fa-utensils article-icon"></i>
+          <h3 class="article-tittle">Food and Drink</h3>
+          <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, facere.</p>
+          <a href="" class="btn btn-primary">Continue Reading</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- Slider -->
+  <section id="recommends" class="section-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="level-slider">
+
+            <div class="level-slider-item">
+              <img src="img/img-01.jpg" alt="">
+              <div class="level-slider-item-container">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, neq provident.Ahmed Moharem Lorem ipsum dolor sit amet.ue provident.Ahmed Moharem Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary">Get More</a>
+              </div>
+            </div>
+
+            <div class="level-slider-item">
+              <img src="img/img-02.jpg" alt="">
+              <div class="level-slider-item-container">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing provident.Ahmed Moharem Lorem ipsum dolor sit amet. elit. Tempore, neque provident.Ahmed Moharem Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary">Get More</a>
+              </div>
+            </div>
+
+            <div class="level-slider-item">
+              <img src="img/img-01.jpg" alt="">
+              <div class="level-slider-item-container">
+                <h3>sit amet consectetur adipisicing elit.</h3>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, neque provident provident.Ahmed Moharem Lorem ipsum dolor sit amet..Ahmed Moharem Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary">Get More</a>
+              </div>
+            </div>
+
+            <div class="level-slider-item">
+              <img src="img/img-02.jpg" alt="">
+              <div class="level-slider-item-container">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, neque provident.Ahmed Moharem Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary">Get More</a>
+              </div>
+            </div>
+            
+            <div class="level-slider-item">
+              <img src="img/img-01.jpg" alt="">
+              <div class="level-slider-item-container">
+                <h3>Tango ipsum dolor sit amet.</h3>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, neque provident.Ahmed Moharem Lorem ipsum dolor sit amet. provident.Ahmed Moharem Lorem ipsum dolor</p>
+                <a href="#" class="btn btn-primary">Get More</a>
+              </div>
+            </div>
+
+            <div class="level-slider-item">
+              <img src="img/img-02.jpg" alt="">
+              <div class="level-slider-item-container">
+                <h3>elit. Tempore, neque provident.Ahmed Moharem</h3>
+                <p class="text-black-50">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, neque provident.Ahmed Moharem Lorem ipsum dolor sit amet.</p>
+                <a href="#" class="btn btn-primary">Get More</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="start-places">
+            <div class="start-places-header">
+              <h3>Recomended Places</h3>
+              <p>Places that we recomended for you</p>
+            </div>
+            <div class="start-places-body">
+              <a href="#">
+                <img src="img/tn-img-01.jpg" alt="title">
+                <h4>Europe</h4>
+              </a>
+              <a href="#">
+                <img src="img/tn-img-02.jpg" alt="title">
+                <h4>Asia</h4>
+              </a>
+              <a href="#">
+                <img src="img/tn-img-03.jpg" alt="title">
+                <h4>Africa</h4>
+              </a>
+              <a href="#">
+                <img src="img/tn-img-04.jpg" alt="title">
+                <h4>America</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Video -->
+<section  class="video">
+  <div class="video-container">
+    <video controls loop class="level-video">
+      <source src="./videos/video.mp4" type="video/mp4">
+      <source src="./videos/video.ogg" type="video/ogg">
+      Your Browser Don't Support Video
+    </video>
+  </div>
+</section>
+<!-- contact form -->
+<section id="contact">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292342.4691234445!2d36.17065726777516!3d26.817230706357403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z2YXYtdix!5e0!3m2!1sar!2seg!4v1691323523916!5m2!1sar!2seg" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      <div class="col-lg-6">
+        <form class="contact-form">
+
+          <div class="form-group">
+            <input type="text" class="form-control" required placeholder="Name">
+            <i class="fa fa-user"></i>
+          </div>
+    
+          <div class="form-group">
+            <input type="email" class="form-control" required placeholder="Email">
+            <i class="fa fa-envelope"></i>
+          </div>
+    
+          <div class="form-group">
+            <input type="text" class="form-control" required placeholder="Subject">
+            <i class="fa fa-book"></i>
+          </div>
+    
+          <div class="form-group">
+            <textarea name="" id="" class="form-control" rows="9" required placeholder="Message"></textarea>
+            <i class="fa fa-commenting"></i>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+      </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="footer bg-dark">
+  <div class="container">
+    <p>Copyrights &copy; 2023 Your Company
+      <a href="#">Ahmed Moharam</a>
+    </p>
+  </div>
+</footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
